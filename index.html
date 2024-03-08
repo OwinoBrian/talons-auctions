@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talons Auctioneers</title>
+    <link rel="icon" type="image/png" sizes="100x100" href="/images/talon letterhead-1.pdf(3).png">
+    <link rel="icon" type="image/png" sizes="50x50" href="images/talon letterhead-1.pdf(3).png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/talon letterhead-1.pdf(3).png" alt="Company Logo">
+                <a href="https://www.facebook.com/profile.php?id=100063889308839&mibextid=ZbWKwL" class="enquire-button">Place a bid</a>
+            
+            </div>
+            <div>
+               
+            </div>   
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about" id="about-link">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="home">
+        <div class="text-container">
+            <h1 class="company-name">Talons Auctioneers</h1>
+            <p class="slogan">A collection partner never sleeps.</p>
+        </div>
+        <div class="image-container">
+            <img src="images/gavel.jpg" alt="Image">
+        </div>
+    </section>
+    
+
+    <hr>
+
+    <section id="about" class="section-about">
+        <h1>About Us</h1>
+        <p>Launched in 2015,specializes in the auctioning of Real Estate, Commercial
+            and Industrial Property and also in the realization of charged securities. We
+            also specialize in repossessions which is our core business. The business is
+            equipped with the latest information technology to serve clients to the best
+            effect and a vast client database which ensures widespread advertising.
+        </p>
+        <div class="kpis">
+            <div class="kpi">
+                <span id="salesConversionRate">0</span>
+                <p>% Sales Conversion Rate</p>
+            </div>
+            <div class="kpi">
+                <span id="numberOfClients">0</span>
+                 <p>Number of Clients</p>
+            </div>
+            <div class="kpi">
+                <span id="assetsSold">0</span> 
+                <p>Assets Sold</p>
+            </div>
+        </div>
+        <hr>
+        <h2>Our Values</h2>
+        <div class="values">
+            <div class="value">
+                <i class="material-icons">check_circle</i>
+                <p>Assertiveness</p>
+            </div>
+            <div class="value">
+                <i class="material-icons">chat</i>
+                <p>Open and clear communication</p>
+            </div>
+            <div class="value">
+                <i class="material-icons">emoji_people</i>
+                <p>Honesty</p>
+            </div>
+            <div class="value">
+                <i class="material-icons">gavel</i>
+                <p>Integrity</p>
+            </div>
+            <div class="value">
+                <i class="material-icons">people_alt</i>
+                <p>Loyal client relationships</p>
+            </div>
+            <div class="value">
+                <i class="material-icons">work</i>
+                <p>Professionalism</p>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <section id="services" class="section-services">
+        <h1>Services</h1>
+        <section class="slider-container">
+            <div class="slider-navigation">
+                <button class="next" onclick="moveSlide(1)">&#10094;</button>
+                <button class="prev" onclick="moveSlide(-1)">&#10095;</button>
+                
+                
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider" id="slider">
+                    <div id="slide-1" class="image-text-container">
+                        <img src="images/assest reposession.jpg" alt="Asset Repossessing"/>
+                        <p>Asset Repossession</p>
+                    </div>
+                    <div id="slide-2" class="image-text-container">
+                        <img src="images/land-repo.jpg" alt="Land Repossession"/>
+                        <p>Land Repossession</p>                    
+                    </div>
+                    <div id="slide-3" class="image-text-container">
+                        <img src="images/resale.jpeg" alt="Asset Resale">
+                        <p>Resale of Assets</p>
+                    </div>                 
+                </div>
+            </div>
+        </section>
+    </section>
+       
+            
+      
+    </section>
+
+    <hr>
+
+   
+    <section id="contact" class="section-contact">
+        <h1>Contact Us</h1>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Address: Mirema Springs. Roadrunner Complex Room 2</p>           
+                <p>Phone: +254 722 357 156</p>
+                <p>Email: info@talonsauctioneers.com</p>
+                <br>
+                <h2>Follow us</h2>
+                <div class="socials">                    
+                    <a href="https://www.instagram.com/maninigeorge?igsh=MTFhZTJ0NWd1MjZuZw==" target="_blank">
+                        <img src="images/instagram_3955024.png" alt="talonsauctioneers-instagram">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100063889308839&mibextid=ZbWKwL" target="_blank">
+                        <img src="images/facebook_2504903.png" alt="talonsauctioneers-facebook">
+                    </a>
+                    <a href="https://www.tiktok.com/@georgemanini?_t=8kTsTeDx8Vh&_r=1" target="_blank">
+                        <img src="images/tik-tok_4782345.png" alt="talonsauctioneers-tik-tok">
+                    </a>
+                    <a href="https://youtube.com/@talonsauctioneers?si=9PhYjg-s0bMLCmyI" target="_blank">
+                        <img src="images/youtube_1384060.png" alt="talonsauctioneers-youtube">
+                    </a>    
+
+                   
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class ="footer-links">
+                <h2>Downloads</h2>
+                <ul>
+                    <li><a>Company Profile</a></li>
+                    <li><a>Data Privacy Policy</a></li>
+                
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Resources</h2>
+                <ul>                                                                                                                                                                                                 
+                   <li><a>Blogs</a></li> 
+                   <li><a>Visit Market Place</a></li> 
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Newsletter</h2>
+                <form class="newsletter-form">
+                    <input type="firstname" name="firstname" placeholder="Enter First Name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+               
+            </div>
+
+        </div>
+        <p>&copy; 2024 Talons Auctioneers. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+<!-- Include Slick JavaScript -->
+
+</html>
